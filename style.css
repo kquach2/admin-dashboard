@@ -12,9 +12,116 @@
 .header {
     display: grid;
     grid-template-rows: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-column: 2;
     grid-row: auto;
+    padding: 10px 30px;
+    font-family: 'Roboto', sans-serif;
 
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.notification {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.greeting img {
+    height: 75px;
+    width: 75px;
+}
+
+.greet :first-child {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.greet :nth-child(2) {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.greet {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile {
+    height: 48px;
+    width: 48px;
+}
+
+.notification p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;    
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: #5b21b6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: unset;
+
+}
+
+a:visited {
+    color: unset;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    border: none;
+    border-radius: 25px;
+    flex: 1;
+    height: 1.5rem;
+    background-color: #DCDCDC;
+}
+
+.search img {
+    height: 4;
 }
 
 .sidebar {
@@ -25,7 +132,7 @@
     background-color: #5b21b6;
     gap: 50px;
     padding: 15px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 20px;
     font-weight: 700;
@@ -65,8 +172,16 @@ img {
     width: 24px;
 }
 
+.logo img {
+    height: 48px;
+    width: 48px;
+}
+
+.dashboard {
+    font-size: 25px;
+}
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
          url('fonts/roboto-regular-webfont.woff') format('woff');
 }
