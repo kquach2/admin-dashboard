@@ -6,7 +6,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 3fr;
 }
 
 .header {
@@ -152,7 +152,7 @@ input {
 .main-content {
     display: grid;
     grid-template-columns: 3.5fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-column: 2;
     background-color: #DCDCDC;
     padding: 15px;
@@ -197,9 +197,7 @@ img {
     gap: 10px;
 }
 
-.your-projects {
-    grid-column: 1 / -1;
-    grid-row: auto;
+.your-projects, .announcements-title, .trending-title {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -240,6 +238,12 @@ img {
     font-weight: bold;
 }
 
+.info :nth-child(2), .announcement :nth-child(2), 
+.user :nth-child(2) {
+    color: #708090;
+}
+
+
 .card :nth-child(2) {
     font-size: 12px;
 }
@@ -250,7 +254,7 @@ img {
     gap: 25px;
 }
 
-.announcements {
+.announcements, .trending {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -263,6 +267,7 @@ img {
     background-color: white;
     border-radius: 10px;
     padding: 25px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .announcement-stack > :nth-child(2){
@@ -286,6 +291,8 @@ img {
     display: flex;
     gap: 10px;
     align-items: center;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .user {
@@ -296,4 +303,13 @@ img {
 .trending img {
     width: 48px;
     height: 48px;
+}
+
+.announcement > :first-child {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.announcement > :nth-child(2) {
+    font-size: 10px;
 }
