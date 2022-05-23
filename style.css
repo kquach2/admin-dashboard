@@ -152,8 +152,11 @@ input {
 .main-content {
     display: grid;
     grid-template-columns: 3.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column: 2;
     background-color: #DCDCDC;
+    padding: 15px;
+    gap: 15px;
 }
 
 .primary-nav ul, .secondary-nav ul {
@@ -191,7 +194,6 @@ img {
 .projects {
     display: flex;
     flex-direction: column;
-    padding: 15px;
     gap: 10px;
 }
 
@@ -243,5 +245,55 @@ img {
 }
 
 .announcements-trending {
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 290px;
+}
+.announcement-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.announcement-stack > :nth-child(2){
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.trending-stack {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    background-color: white;
+    border-radius: 10px;
+    gap: 15px;
+    padding: 25px;
+}
+
+.trending-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending img {
+    width: 48px;
+    height: 48px;
 }
