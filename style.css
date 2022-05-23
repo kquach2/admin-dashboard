@@ -150,8 +150,10 @@ input {
 }
 
 .main-content {
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
     grid-column: 2;
-    background-color: green;
+    background-color: #DCDCDC;
 }
 
 .primary-nav ul, .secondary-nav ul {
@@ -184,4 +186,62 @@ img {
     font-family: 'Roboto', sans-serif;
     src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
          url('fonts/roboto-regular-webfont.woff') format('woff');
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+.your-projects {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+.card {
+    display: grid;
+    border-radius: 10px;
+    width: 250px;
+    height: 160px;
+    padding: 15px;
+    background-color: white;
+    border-left: 6px solid green;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 15px;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+.info :first-child {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card :nth-child(2) {
+    font-size: 12px;
+}
+
+.announcements-trending {
+    background-color: green;
 }
