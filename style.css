@@ -6,7 +6,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .header {
@@ -213,7 +213,7 @@ img {
 .card {
     display: grid;
     border-radius: 10px;
-    width: 250px;
+    /*width: 250px;*/
     height: 160px;
     padding: 15px;
     background-color: white;
